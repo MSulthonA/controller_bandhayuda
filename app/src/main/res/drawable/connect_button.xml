@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+            <corners android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"/>
+            <solid android:color="#2FDDED"/>
+            <size android:height="50dp"/>
+            <size android:width="200dp"/>
+            <!--    <stroke android:color="#000000"-->
+            <!--        android:width="2dp"-->
+            <!--        android:dashGap="1dp"-->
+            <!--        />-->
+        </shape>
+    </item>
+    <item android:state_activated="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--            <corners android:radius="50dp"/>-->
+            <corners android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"/>
+            <solid android:color="#B34952"/>
+            <size android:height="50dp"/>
+            <size android:width="200dp"/>
+<!--                <stroke android:color="#000000"-->
+<!--                    android:width="2dp"-->
+<!--                    android:dashGap="1dp"-->
+<!--                    />-->
+        </shape>
+    </item>
+    <item android:state_pressed="false" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+            <corners android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"/>
+            <solid android:color="#FDDAA7"/>
+            <size android:height="50dp"/>
+            <size android:width="70dp"/>
+            <!--    <stroke android:color="#000000"-->
+            <!--        android:width="2dp"-->
+            <!--        android:dashGap="1dp"-->
+            <!--        />-->
+        </shape>
+    </item>
+</selector>

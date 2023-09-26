@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/pole_bl_on"
+        android:state_activated="true"
+        >
+        <scale
+            android:scaleHeight="50%"
+            android:scaleWidth="50%" />
+    </item>
+    <item android:drawable="@drawable/pole_bl_off"
+        android:state_activated="false"
+        >
+        <scale
+            android:scaleHeight="40%"
+            android:scaleWidth="40%" />
+    </item>
+    <item android:drawable="@drawable/pole_bl_on"
+        android:state_pressed="true"
+        >
+        <scale
+            android:scaleHeight="50%"
+            android:scaleWidth="50%" />
+    </item>
+</selector>

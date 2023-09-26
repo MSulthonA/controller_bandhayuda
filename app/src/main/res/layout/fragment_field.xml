@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_f"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="0dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/lapangan_blw"
+        app:layout_constraintEnd_toStartOf="@id/buttonD2"
+        app:layout_constraintStart_toEndOf="@id/buttonA1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/receiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:enabled="false"
+            android:gravity="bottom"
+            android:scrollbars="vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            app:layout_constraintEnd_toStartOf="@+id/radio_domain1"
+            app:layout_constraintStart_toStartOf="@id/buttonA1"
+            app:layout_constraintTop_toBottomOf="@id/ViewLeftSpeed"
+            app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <!--    Layout Button A-->
+    <TextView
+        android:id="@+id/TextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Thrower Angle"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonA1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rec_button"
+        android:scaleX="-1"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextA" />
+
+    <Button
+        android:id="@+id/buttonA2"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rec_button_2"
+        android:layout_marginTop="5dp"
+        android:scaleX="-1"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonA1" />
+    <Button
+        android:id="@+id/buttonA3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rec_botton_3"
+        android:scaleX="-1"
+        android:text="grip"
+        android:textScaleX="-1"
+        android:textSize="23dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ViewLeftSpeed" />
+
+    <!--    Layout Button B-->
+    <TextView
+        android:id="@+id/ViewLeftSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@id/buttonA2"
+        app:layout_constraintEnd_toEndOf="@id/buttonA2"
+        app:layout_constraintTop_toBottomOf="@id/buttonA2"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/buttonB1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/round_button_3"-->
+<!--        android:text="Posisi A"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonB2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/round_button_2"-->
+<!--        android:text="Posisi B"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/buttonB1"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonB3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/round_button_3"-->
+<!--        android:text="Posisi C"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/buttonB1" />-->
+<!--    &lt;!&ndash;    Layout Button C&ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/buttonC1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/round_button_3"-->
+<!--        android:text="State A"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonC2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/round_button_2"-->
+<!--        android:text="State B"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/buttonC1"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonC3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/round_button_3"-->
+<!--        android:text="State C"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/buttonC1" />-->
+    <!--    Layout Button D-->
+    <TextView
+        android:id="@+id/D_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Thrower Speed"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonD1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rec_button"
+        android:scaleX="1"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/D_Title" />
+
+    <Button
+        android:id="@+id/buttonD2"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rec_button_2"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonD1" />
+    <Button
+        android:id="@+id/buttonD3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rec_botton_3"
+        android:text="next"
+        android:textSize="23dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ViewRightSpeed" />
+    <Button
+        android:id="@+id/socketConnection"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:background="@drawable/connect_button"
+        android:text="Connect"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/ViewRightSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@id/buttonD2"
+        app:layout_constraintStart_toStartOf="@id/buttonD2"
+        app:layout_constraintTop_toBottomOf="@id/buttonD2" />
+
+
+      <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView_left"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="0dp"
+        app:JV_backgroundColor="#C1505050"
+        app:JV_borderColor="#474747"
+        app:JV_borderWidth="7dp"
+        app:JV_buttonColor="@color/mainColor"
+        app:JV_buttonSizeRatio="25%"
+        app:JV_fixedCenter="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView_right"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-5dp"
+        app:JV_backgroundColor="#C1505050"
+        app:JV_borderColor="#474747"
+        app:JV_borderWidth="7dp"
+        app:JV_buttonColor="@color/mainColor"
+        app:JV_buttonSizeRatio="25%"
+        app:JV_fixedCenter="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/buttonD1"
+        app:layout_constraintStart_toEndOf="@id/buttonA1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            >
+
+            <Button
+                android:id="@+id/radio_enemy1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/trapezium_imageb"
+                android:onClick="onRadioButtonClicked"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/radio_enemy2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintEnd_toStartOf="@id/radio_enemy3"
+                app:layout_constraintStart_toEndOf="@+id/radio_enemy1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/radio_enemy3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+
+            <Button
+                android:id="@+id/radio_angkor1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="-7dp"
+                android:layout_marginBottom="-13dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintBottom_toTopOf="@id/radio_angkor3"
+                app:layout_constraintEnd_toStartOf="@id/radio_angkor3" />
+
+            <Button
+                android:id="@+id/radio_angkor2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="-7dp"
+                android:layout_marginBottom="-13dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintBottom_toTopOf="@id/radio_angkor3"
+                app:layout_constraintStart_toEndOf="@id/radio_angkor3" />
+
+            <Button
+                android:id="@+id/radio_angkor3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginVertical="0dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/radio_angkor5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="-7dp"
+                android:layout_marginTop="-13dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintStart_toEndOf="@id/radio_angkor3"
+                app:layout_constraintTop_toBottomOf="@id/radio_angkor3" />
+
+            <Button
+                android:id="@+id/radio_angkor4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="-7dp"
+                android:layout_marginTop="-13dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintEnd_toStartOf="@id/radio_angkor3"
+                app:layout_constraintTop_toBottomOf="@id/radio_angkor3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/radio_domain1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/radio_domain2"
+                android:paddingTop="5dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/radio_domain3"
+                app:layout_constraintStart_toEndOf="@+id/radio_domain1" />
+
+            <Button
+                android:id="@+id/radio_domain3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/trapezium_imageb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
